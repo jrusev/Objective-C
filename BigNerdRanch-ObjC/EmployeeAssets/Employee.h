@@ -4,7 +4,7 @@
 @interface Employee : NSObject
 {
     int employeeId;
-    NSMutableArray *assets;
+    NSMutableSet *assets;
 }
 
 @property int employeeId;
