@@ -5,8 +5,7 @@
 
 @synthesize employeeId;
 
-- (void)addAssetsObject:(Asset *)a
-{
+- (void)addAssetsObject:(Asset *)a {
     // lazy
     if (!assets) {
         assets = [[NSMutableSet alloc] init];
@@ -15,8 +14,7 @@
     [a setOwner:self];
 }
 
-- (unsigned int)valueOfAssets
-{
+- (unsigned int)valueOfAssets {
     unsigned int sum = 0;
     for (Asset *a in assets) {
         sum += [a resaleValue];
@@ -24,14 +22,12 @@
     return sum;
 }
 
-- (NSString *)description
-{
+- (NSString *)description {
     return [NSString stringWithFormat:@"<Employee %d: $%d in assets>",
             [self employeeId],[self valueOfAssets]];
 }
 
-- (void)dealloc
-{
+- (void)dealloc {
     NSLog(@"deallocating %@", self);
 }
 

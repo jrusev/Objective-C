@@ -5,19 +5,17 @@
 
 @synthesize label, resaleValue, owner;
 
-- (void)dealloc
-{
+- (void)dealloc {
     NSLog(@"Dealocating %@", self);
 }
 
 // Overrides NSObject description
-- (NSString *)description
-{
+- (NSString *)description {
     if ([self owner]) {
         return [NSString stringWithFormat:@"<%@: $%d, owner: %@>",
                 [self label], [self resaleValue], [self owner]];
     } else {
-        return [NSString stringWithFormat:@"<%@: $%d >", [self label], [self resaleValue]];
+        return [NSString stringWithFormat:@"<%@: $%d, owner: %@>", [self label], [self resaleValue], @"no owner"];
     }
     
 }
