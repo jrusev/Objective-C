@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		845AD90619F3FC0A00A1F590 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 845AD90519F3FC0A00A1F590 /* main.m */; };
-		845AD90E19F3FC1A00A1F590 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 845AD90D19F3FC1A00A1F590 /* Employee.m */; };
-		845AD91119F3FC3A00A1F590 /* Asset.m in Sources */ = {isa = PBXBuildFile; fileRef = 845AD91019F3FC3A00A1F590 /* Asset.m */; };
+		84A7C07C19F59201002D0BC8 /* Asset.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7C07919F59201002D0BC8 /* Asset.m */; };
+		84A7C07D19F59201002D0BC8 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7C07B19F59201002D0BC8 /* Employee.m */; };
+		84A7C07F19F5920E002D0BC8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A7C07E19F5920E002D0BC8 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,12 +25,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		845AD90219F3FC0A00A1F590 /* EmployeeAssets */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EmployeeAssets; sourceTree = BUILT_PRODUCTS_DIR; };
-		845AD90519F3FC0A00A1F590 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		845AD90C19F3FC1A00A1F590 /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
-		845AD90D19F3FC1A00A1F590 /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
-		845AD90F19F3FC3A00A1F590 /* Asset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Asset.h; sourceTree = "<group>"; };
-		845AD91019F3FC3A00A1F590 /* Asset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Asset.m; sourceTree = "<group>"; };
+		845AD90219F3FC0A00A1F590 /* EmployeeAssets */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = EmployeeAssets; path = "/Users/admin/Desktop/Objective-C/BigNerdRanch-ObjC/EmployeeAssets/build/Debug/EmployeeAssets"; sourceTree = "<absolute>"; };
+		84A7C07819F59201002D0BC8 /* Asset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Asset.h; sourceTree = "<group>"; };
+		84A7C07919F59201002D0BC8 /* Asset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Asset.m; sourceTree = "<group>"; };
+		84A7C07A19F59201002D0BC8 /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
+		84A7C07B19F59201002D0BC8 /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
+		84A7C07E19F5920E002D0BC8 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,29 +47,20 @@
 		845AD8F919F3FC0A00A1F590 = {
 			isa = PBXGroup;
 			children = (
-				845AD90C19F3FC1A00A1F590 /* Employee.h */,
-				845AD90F19F3FC3A00A1F590 /* Asset.h */,
-				845AD91019F3FC3A00A1F590 /* Asset.m */,
-				845AD90D19F3FC1A00A1F590 /* Employee.m */,
-				845AD90419F3FC0A00A1F590 /* EmployeeAssets */,
-				845AD90319F3FC0A00A1F590 /* Products */,
+				84A7C07719F591EA002D0BC8 /* Models */,
+				84A7C07E19F5920E002D0BC8 /* main.m */,
 			);
 			sourceTree = "<group>";
 		};
-		845AD90319F3FC0A00A1F590 /* Products */ = {
+		84A7C07719F591EA002D0BC8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				845AD90219F3FC0A00A1F590 /* EmployeeAssets */,
+				84A7C07819F59201002D0BC8 /* Asset.h */,
+				84A7C07919F59201002D0BC8 /* Asset.m */,
+				84A7C07A19F59201002D0BC8 /* Employee.h */,
+				84A7C07B19F59201002D0BC8 /* Employee.m */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		845AD90419F3FC0A00A1F590 /* EmployeeAssets */ = {
-			isa = PBXGroup;
-			children = (
-				845AD90519F3FC0A00A1F590 /* main.m */,
-			);
-			path = EmployeeAssets;
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -114,7 +105,7 @@
 				en,
 			);
 			mainGroup = 845AD8F919F3FC0A00A1F590;
-			productRefGroup = 845AD90319F3FC0A00A1F590 /* Products */;
+			productRefGroup = 845AD8F919F3FC0A00A1F590;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -128,9 +119,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				845AD91119F3FC3A00A1F590 /* Asset.m in Sources */,
-				845AD90619F3FC0A00A1F590 /* main.m in Sources */,
-				845AD90E19F3FC1A00A1F590 /* Employee.m in Sources */,
+				84A7C07C19F59201002D0BC8 /* Asset.m in Sources */,
+				84A7C07F19F5920E002D0BC8 /* main.m in Sources */,
+				84A7C07D19F59201002D0BC8 /* Employee.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +235,7 @@
 				845AD90B19F3FC0A00A1F590 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
