@@ -1,11 +1,3 @@
-//
-//  main.m
-//  SpiralMatrix
-//
-//  Created by JR on 10/21/14.
-//  Copyright (c) 2014 JR. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
 
 void printMatrix(NSArray *matrix) {
