@@ -15,7 +15,10 @@ int main(int argc, const char * argv[]) {
         NSURL *url = [NSURL URLWithString:@"http://www.gutenberg.org/cache/epub/205/pg205.txt"];
         NSURLRequest *req = [NSURLRequest requestWithURL:url];
         
-        __unused NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:req delegate:logger startImmediately:YES];
+        __unused NSURLConnection *conn = [[NSURLConnection alloc]
+                                          initWithRequest:req
+                                          delegate:logger
+                                          startImmediately:YES];
         
         __unused NSTimer *timer = [NSTimer
                                    scheduledTimerWithTimeInterval:2
