@@ -20,4 +20,4 @@
         </tr>
     </table>
 
-* Create a function that generates the above matrix by a given N.
+2. Create a function that generates the above matrix by a given N.
