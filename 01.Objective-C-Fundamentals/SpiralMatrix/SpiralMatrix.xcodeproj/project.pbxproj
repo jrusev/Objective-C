@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		84A1C12419F6FABB007F8CCA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A1C12319F6FABB007F8CCA /* main.m */; };
+		84A1C12E19F7257F007F8CCA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A1C12D19F7257F007F8CCA /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,7 @@
 
 /* Begin PBXFileReference section */
 		84A1C12019F6FABB007F8CCA /* SpiralMatrix */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SpiralMatrix; sourceTree = BUILT_PRODUCTS_DIR; };
-		84A1C12319F6FABB007F8CCA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84A1C12D19F7257F007F8CCA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +41,7 @@
 		84A1C11719F6FABB007F8CCA = {
 			isa = PBXGroup;
 			children = (
-				84A1C12219F6FABB007F8CCA /* SpiralMatrix */,
+				84A1C12D19F7257F007F8CCA /* main.m */,
 				84A1C12119F6FABB007F8CCA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,14 +52,6 @@
 				84A1C12019F6FABB007F8CCA /* SpiralMatrix */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		84A1C12219F6FABB007F8CCA /* SpiralMatrix */ = {
-			isa = PBXGroup;
-			children = (
-				84A1C12319F6FABB007F8CCA /* main.m */,
-			);
-			path = SpiralMatrix;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +110,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84A1C12419F6FABB007F8CCA /* main.m in Sources */,
+				84A1C12E19F7257F007F8CCA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

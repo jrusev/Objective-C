@@ -1,3 +1,8 @@
+//
+//  main.m
+//  SpiralMatrix
+//
+
 #import <Foundation/Foundation.h>
 
 void printMatrix(NSArray *matrix) {
@@ -50,13 +55,13 @@ NSMutableArray* createSpiralMatrix(int n) {
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-      
+        
         // hard-coded
         NSArray *spiral = @[
-          @[@1, @2, @3],
-          @[@8, @9, @4],
-          @[@7, @6, @5]
-        ];
+                            @[@1, @2, @3],
+                            @[@8, @9, @4],
+                            @[@7, @6, @5]
+                            ];
         printMatrix(spiral);
         
         // by given size N
