@@ -59,6 +59,7 @@ NSMutableArray* createSpiralMatrix(int n) {
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
       
+        // hard-coded
         NSArray *spiral = @[
           @[@1, @2, @3],
           @[@8, @9, @4],
@@ -66,6 +67,7 @@ int main(int argc, const char * argv[]) {
         ];
         printMatrix(spiral);
         
+        // by given size N
         NSMutableArray *matrix = createSpiralMatrix(4);
         printMatrix(matrix);
     }
