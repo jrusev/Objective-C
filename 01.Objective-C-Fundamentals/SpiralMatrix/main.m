@@ -27,7 +27,7 @@ NSMutableArray* createSpiralMatrix(int n) {
     // Initialize matrix
     NSMutableArray *matrix = [[NSMutableArray alloc] initWithCapacity:n];
     for (int i = 0; i < n; i++) {
-        matrix[i] = [[NSMutableArray alloc] init];
+        matrix[i] = [[NSMutableArray alloc] initWithCapacity:n];
         for (int j = 0; j < n; j++) {
             matrix[i][j] = [NSNull null];
         }
