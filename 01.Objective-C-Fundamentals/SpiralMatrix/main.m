@@ -28,12 +28,12 @@ NSArray* createSpiralMatrix(int n) {
         }
     }
     
+    // Fill matrix
     int x = 0;
     int y = 0;
     int dx = 0;
     int dy = 1;
     
-    // Fill matrix
     for (int i = 0; i < n * n; i++) {
         matrix[x][y] = [NSNumber numberWithInt:i+1];
         int nx = x + dx;
