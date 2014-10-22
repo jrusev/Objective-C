@@ -19,10 +19,10 @@ void printMatrix(NSArray *matrix) {
 
 NSMutableArray* createSpiralMatrix(int n) {
     
-    int dx = 1;
-    int dy = 0;
-    int x = 0;
-    int y = 0;
+    int x = 0; // intial col
+    int y = 0; // intial row
+    int dx = 1; // increment col
+    int dy = 0; // increment row
     
     // Initialize matrix
     NSMutableArray *matrix = [[NSMutableArray alloc] initWithCapacity:n];
@@ -38,10 +38,12 @@ NSMutableArray* createSpiralMatrix(int n) {
         matrix[y][x] = [NSNumber numberWithInt:i+1];
         int nx = x + dx;
         int ny = y + dy;
+        // if (nx, ny) is inside matrix and is empty
         if (0 <= nx && nx < n && 0 <= ny && ny < n && [matrix[ny][nx] isEqual:[NSNull null]]) {
             x = nx;
             y = ny;
         } else {
+            // change direction (swap dx and dy)
             int temp = dy;
             dy = dx;
             dx = -temp;
