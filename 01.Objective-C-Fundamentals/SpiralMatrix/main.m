@@ -17,12 +17,7 @@ void printMatrix(NSArray *matrix) {
     NSLog(@"\n%@", buffer);
 }
 
-NSMutableArray* createSpiralMatrix(int n) {
-    
-    int x = 0; // intial col
-    int y = 0; // intial row
-    int dx = 1; // increment col
-    int dy = 0; // increment row
+NSArray* createSpiralMatrix(int n) {
     
     // Initialize matrix
     NSMutableArray *matrix = [[NSMutableArray alloc] initWithCapacity:n];
@@ -33,20 +28,25 @@ NSMutableArray* createSpiralMatrix(int n) {
         }
     }
     
+    int x = 0;
+    int y = 0;
+    int dx = 0;
+    int dy = 1;
+    
     // Fill matrix
     for (int i = 0; i < n * n; i++) {
-        matrix[y][x] = [NSNumber numberWithInt:i+1];
+        matrix[x][y] = [NSNumber numberWithInt:i+1];
         int nx = x + dx;
         int ny = y + dy;
         // if (nx, ny) is inside matrix and is empty
-        if (0 <= nx && nx < n && 0 <= ny && ny < n && [matrix[ny][nx] isEqual:[NSNull null]]) {
+        if (0 <= nx && nx < n && 0 <= ny && ny < n && [matrix[nx][ny] isEqual:[NSNull null]]) {
             x = nx;
             y = ny;
         } else {
             // change direction (swap dx and dy)
-            int temp = dy;
-            dy = dx;
-            dx = -temp;
+            int temp = dx;
+            dx = dy;
+            dy = -temp;
             x = x + dx;
             y = y + dy;
         }
@@ -58,7 +58,7 @@ NSMutableArray* createSpiralMatrix(int n) {
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        // hard-coded
+        // hard-codedr
         NSArray *spiral = @[
                             @[@1, @2, @3],
                             @[@8, @9, @4],
@@ -67,7 +67,7 @@ int main(int argc, const char * argv[]) {
         printMatrix(spiral);
         
         // by given size N
-        NSMutableArray *matrix = createSpiralMatrix(4);
+        NSArray *matrix = createSpiralMatrix(4);
         printMatrix(matrix);
     }
     return 0;
