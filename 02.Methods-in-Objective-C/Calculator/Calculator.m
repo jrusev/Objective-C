@@ -4,7 +4,7 @@
     NSMutableString *_operations;
 }
 
-- (id)init {
+- (instancetype)init {
     self = [super init];
     if (self) {
         _operations = [[NSMutableString alloc] init];
