@@ -43,7 +43,7 @@ NSArray* createSpiralMatrix(int n) {
             x = nx;
             y = ny;
         } else {
-            // change direction (swap dx and dy)
+            // change direction
             int temp = dx;
             dx = dy;
             dy = -temp;
@@ -58,7 +58,7 @@ NSArray* createSpiralMatrix(int n) {
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
-        // hard-codedr
+        // hard-coded
         NSArray *spiral = @[
                             @[@1, @2, @3],
                             @[@8, @9, @4],
