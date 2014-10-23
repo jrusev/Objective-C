@@ -17,11 +17,11 @@ int main(int argc, const char * argv[]) {
         
         Todo *todoHomework = [Todo initWithTitle:@"homework obj-c"
                                          andDate:[dateFormat dateFromString:@"Oct 26 2014"]];
-        Todo *todoTeamwork = [Todo initWithTitle:@"exam iOS"
+        Todo *todoExam = [Todo initWithTitle:@"exam iOS"
                                          andDate:[dateFormat dateFromString:@"Nov 7 2014"]];
         
         [todoManager addTodo:todoHomework];
-        [todoManager addTodo:todoTeamwork];
+        [todoManager addTodo:todoExam];
         
         NSLog(@"%@", [todoManager todosAll]);
         
