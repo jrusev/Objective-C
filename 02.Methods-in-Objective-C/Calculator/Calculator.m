@@ -1,23 +1,15 @@
-//
-//  Calculator.m
-//  Calculator
-//
-
 #import "Calculator.h"
 
 @implementation Calculator {
-    double _result;
     NSMutableString *_operations;
 }
 
 - (id)init {
     self = [super init];
-    
     if (self) {
         _operations = [[NSMutableString alloc] init];
         [self clear];
     }
-    
     return self;
 }
 
@@ -26,28 +18,24 @@
     [_operations setString:@"0"];
 }
 
-- (double)addValue:(double)value {
+- (void)addValue:(double)value {
     [_operations appendFormat:@" + %.2f", value];
     _result += value;
-    return _result;
 }
 
-- (double)subtractValue:(double)value {
+- (void)subtractValue:(double)value {
     [_operations appendFormat:@" - %.2f", value];
     _result -= value;
-    return _result;
 }
 
-- (double)divideBy:(double)value {
+- (void)divideBy:(double)value {
     [_operations appendFormat:@" / %.2f", value];
     _result /= value;
-    return _result;
 }
 
-- (double)multiplyBy:(double)value {
+- (void)multiplyBy:(double)value {
     [_operations appendFormat:@" * %.2f", value];
     _result *= value;
-    return _result;
 }
 
 - (void)printResult {
