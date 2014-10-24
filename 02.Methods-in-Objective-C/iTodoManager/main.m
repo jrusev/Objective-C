@@ -1,10 +1,5 @@
-//
-//  main.m
-//  iTodoManager
-//
-//  Created by JR on 10/24/14.
-//  Copyright (c) 2014 JR. All rights reserved.
-//
+// iTodoManager
+// Created by JR on 10/24/14.
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
