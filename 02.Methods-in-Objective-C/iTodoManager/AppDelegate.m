@@ -23,18 +23,12 @@ NSString *docPath() {
         tasks = [[NSMutableArray alloc] init];
     }
     
-    // Is tasks empty?
+    // If tasks is empty put sample data
     if ([tasks count] == 0) {
-        // Put some strings in it
         [tasks addObject:@"Walk the dogs"];
         [tasks addObject:@"Feed the dogs"];
         [tasks addObject:@"Chop the logs"];
     }
-    
-    // Create and configure the UIWindow instance.
-    CGRect windowFrame = [[UIScreen mainScreen] bounds];
-    UIWindow *theWindow = [[UIWindow alloc] initWithFrame:windowFrame];
-    [self setWindow:theWindow];
     
     // Define the frame rectangles of the three UI elements.
     CGRect tableFrame = CGRectMake(0, 80, 320, 380);
@@ -63,14 +57,17 @@ NSString *docPath() {
                      action:@selector(addTask:)
            forControlEvents:UIControlEventTouchUpInside];
     
+    // Create and configure the UIWindow instance.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
     // Add the three UI elements to the window
-    [[self window] addSubview:taskTable];
-    [[self window] addSubview:taskField];
-    [[self window] addSubview:insertButton];
+    [self.window addSubview:taskTable];
+    [self.window addSubview:taskField];
+    [self.window addSubview:insertButton];
     
     // Finalize the window and put it on the screen
-    [[self window] setBackgroundColor:[UIColor whiteColor]];
-    [[self window] makeKeyAndVisible];
+    [self.window setBackgroundColor:[UIColor whiteColor]];
+    [self.window makeKeyAndVisible];
     
     return YES;
 }
@@ -114,12 +111,12 @@ NSString *docPath() {
     if (!cell) {
         // ...and only create a new cell if none are abaible
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
-                                   reuseIdentifier:@"Cell"];
+                                      reuseIdentifier:@"Cell"];
     }
     
     // Then (re)configure the cell based on the model
     NSString *item = tasks[[indexPath row]];
-    [[cell textLabel] setText:item];
+    [cell.textLabel setText:item];
     
     return cell;
 }
