@@ -13,7 +13,7 @@ NSString *docPath() {
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    // Attempt to loading existing to-do dataset from an array stored to disk.
+    // Attempt to loading existing todo dataset from an array stored to disk.
     NSArray *plist = [NSArray arrayWithContentsOfFile:docPath()];
     if (plist) {
         // If there was a dataset available, copy it into our instance variable.
@@ -25,31 +25,23 @@ NSString *docPath() {
     
     // If tasks is empty put sample data
     if ([tasks count] == 0) {
-        [tasks addObject:@"Walk the dogs"];
-        [tasks addObject:@"Feed the dogs"];
-        [tasks addObject:@"Chop the logs"];
+        [tasks addObjectsFromArray:@[@"Walk the dogs", @"Feed the dogs", @"Chop the logs"]];
     }
-    
-    // Define the frame rectangles of the three UI elements.
-    CGRect tableFrame = CGRectMake(0, 80, 320, 380);
-    CGRect fieldFrame = CGRectMake(20, 40, 200, 31);
-    CGRect buttonFrame = CGRectMake(228, 40, 72, 31);
-    
+ 
     // Create and configure the table view
-    taskTable = [[UITableView alloc] initWithFrame:tableFrame style:UITableViewStylePlain];
+    taskTable = [[UITableView alloc] initWithFrame:CGRectMake(0, 80, 320, 380)
+                                             style:UITableViewStylePlain];
     [taskTable setSeparatorStyle:UITableViewCellSeparatorStyleNone];
-    
-    // Make this object the table view's dataSource
     [taskTable setDataSource:self];
     
     // Create and configure the text field where new tasks will be typed
-    taskField = [[UITextField alloc] initWithFrame:fieldFrame];
+    taskField = [[UITextField alloc] initWithFrame:CGRectMake(20, 40, 200, 31)];
     [taskField setBorderStyle:UITextBorderStyleRoundedRect];
-    [taskField setPlaceholder:@"Type a task, tap insert"];
+    [taskField setPlaceholder:@"Type a task, tap Insert"];
     
-    // Create and configure a rounded rect Insert button
+    // Create and configure the insert button
     insertButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    [insertButton setFrame:buttonFrame];
+    [insertButton setFrame:CGRectMake(228, 40, 72, 31)];
     [insertButton setTitle:@"Insert" forState:UIControlStateNormal];
     
     // Configure the insert button's action to call this object's addTask: method
@@ -83,14 +75,14 @@ NSString *docPath() {
 }
 
 - (void)addTask:(id)sender {
-    NSString *newItem = [taskField text];
+    NSString *newItem = taskField.text;
     if ([newItem isEqualToString:@""]) {
         return;
     }
     
     [tasks addObject:newItem];
     [taskTable reloadData];
-    [taskField setText:@""];
+    taskField.text = @"";
     
     // Resign first responder status to hide the keyboard
     [taskField resignFirstResponder];
@@ -100,22 +92,22 @@ NSString *docPath() {
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // The number of rows is equal to the number of items in the tasks array
-    return [tasks count];
+    return tasks.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    // Check if there's a cell avaible to reuse (a cell that has scrolled off screen)
+    // Check if there's a cell available to reuse (a cell that has scrolled off screen)
     UITableViewCell *cell = [taskTable dequeueReusableCellWithIdentifier:@"Cell"];
     if (!cell) {
-        // ...and only create a new cell if none are abaible
+        // ...and only create a new cell if none are available
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
                                       reuseIdentifier:@"Cell"];
     }
     
     // Then (re)configure the cell based on the model
-    NSString *item = tasks[[indexPath row]];
+    NSString *item = tasks[indexPath.row];
     [cell.textLabel setText:item];
     
     return cell;
