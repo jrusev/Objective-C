@@ -35,12 +35,11 @@
 		8447A49919F9ABCF00D7DC66 = {
 			isa = PBXGroup;
 			children = (
-				8447A4A619F9ABD000D7DC66 /* Info.plist */,
-				8447A4B219F9ABD000D7DC66 /* Images.xcassets */,
 				8447A4A919F9ABD000D7DC66 /* AppDelegate.h */,
 				8447A4AA19F9ABD000D7DC66 /* AppDelegate.m */,
 				8447A4A719F9ABD000D7DC66 /* main.m */,
-				8447A4A519F9ABD000D7DC66 /* Supporting Files */,
+				8447A4A619F9ABD000D7DC66 /* Info.plist */,
+				8447A4B219F9ABD000D7DC66 /* Images.xcassets */,
 				8447A4A319F9ABCF00D7DC66 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,14 +50,6 @@
 				8447A4A219F9ABCF00D7DC66 /* iTodoManager.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		8447A4A519F9ABD000D7DC66 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Supporting Files";
-			path = iTodoManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
