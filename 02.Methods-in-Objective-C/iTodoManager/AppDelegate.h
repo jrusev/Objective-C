@@ -1,6 +1,6 @@
 #import <UIKit/UIKit.h>
 
-// Helper function to get the path on disk where we can save the to-do list
+// Helper function to get the path on disk where we can save the todo list
 NSString *docPath(void);
 
 // A delegate for NSApplication to handle notifications about app launch and shutdown.
