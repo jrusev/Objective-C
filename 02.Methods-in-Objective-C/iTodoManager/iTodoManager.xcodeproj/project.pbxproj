@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8447A4A819F9ABD000D7DC66 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8447A4A719F9ABD000D7DC66 /* main.m */; };
-		8447A4AB19F9ABD000D7DC66 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8447A4AA19F9ABD000D7DC66 /* AppDelegate.m */; };
 		8447A4B319F9ABD000D7DC66 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8447A4B219F9ABD000D7DC66 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -16,8 +15,6 @@
 		8447A4A219F9ABCF00D7DC66 /* iTodoManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTodoManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8447A4A619F9ABD000D7DC66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8447A4A719F9ABD000D7DC66 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8447A4A919F9ABD000D7DC66 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		8447A4AA19F9ABD000D7DC66 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8447A4B219F9ABD000D7DC66 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -35,8 +32,6 @@
 		8447A49919F9ABCF00D7DC66 = {
 			isa = PBXGroup;
 			children = (
-				8447A4A919F9ABD000D7DC66 /* AppDelegate.h */,
-				8447A4AA19F9ABD000D7DC66 /* AppDelegate.m */,
 				8447A4A719F9ABD000D7DC66 /* main.m */,
 				8447A4A619F9ABD000D7DC66 /* Info.plist */,
 				8447A4B219F9ABD000D7DC66 /* Images.xcassets */,
@@ -120,7 +115,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8447A4AB19F9ABD000D7DC66 /* AppDelegate.m in Sources */,
 				8447A4A819F9ABD000D7DC66 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
