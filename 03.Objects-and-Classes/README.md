@@ -12,4 +12,4 @@
     * One for creating events
     * Use the class from the previous exercise
     * Research about creating iPhone apps
-    * Research about Seques and transitions between different views
+    * Research about segues and transitions between different views
