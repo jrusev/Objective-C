@@ -7,7 +7,7 @@
 
 @implementation Event
 
-+ (instancetype)EventWithTitle:(NSString *)title
++ (instancetype)eventWithTitle:(NSString *)title
                      category:(NSString *)category
                          date:(NSDate *)date {
     
