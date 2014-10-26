@@ -18,8 +18,8 @@
                      category:(NSString *)category
                          date:(NSDate *)date;
 
-@property NSString *title, *category, *info;
-@property NSDate *date;
-@property NSMutableArray *guests;
+@property (nonatomic, copy) NSString *title, *category, *info;
+@property (nonatomic, strong) NSDate *date;
+@property (nonatomic, strong) NSMutableArray *guests;
 
 @end

@@ -18,7 +18,6 @@ NSArray* createEvents() {
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        
         EventManager *evManager = [[EventManager alloc] init];
         [evManager addEventsFromArray:createEvents()];
         
@@ -29,5 +28,3 @@ int main(int argc, const char * argv[]) {
     }
     return 0;
 }
-
-
