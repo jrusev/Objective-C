@@ -7,13 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		840C336419F30B650062A6C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 840C336319F30B650062A6C1 /* main.m */; };
-		840C336C19F30C0B0062A6C1 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 840C336B19F30C0B0062A6C1 /* Person.m */; };
-		845AD8F519F3F17C00A1F590 /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 845AD8F419F3F17C00A1F590 /* Employee.m */; };
+		84A236581A0059C4001BFD3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A236571A0059C4001BFD3F /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		840C335E19F30B650062A6C1 /* CopyFiles */ = {
+		84A236521A0059C3001BFD3F /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,16 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		840C336019F30B650062A6C1 /* BMITime */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BMITime; sourceTree = BUILT_PRODUCTS_DIR; };
-		840C336319F30B650062A6C1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		840C336A19F30C0B0062A6C1 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
-		840C336B19F30C0B0062A6C1 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
-		845AD8F319F3F17C00A1F590 /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Employee.h; sourceTree = "<group>"; };
-		845AD8F419F3F17C00A1F590 /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Employee.m; sourceTree = "<group>"; };
+		84A236541A0059C4001BFD3F /* MortalKombat */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MortalKombat; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A236571A0059C4001BFD3F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		840C335D19F30B650062A6C1 /* Frameworks */ = {
+		84A236511A0059C3001BFD3F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,100 +38,94 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		840C335719F30B640062A6C1 = {
+		84A2364B1A0059C3001BFD3F = {
 			isa = PBXGroup;
 			children = (
-				840C336A19F30C0B0062A6C1 /* Person.h */,
-				845AD8F319F3F17C00A1F590 /* Employee.h */,
-				845AD8F419F3F17C00A1F590 /* Employee.m */,
-				840C336B19F30C0B0062A6C1 /* Person.m */,
-				840C336219F30B650062A6C1 /* BMITime */,
-				840C336119F30B650062A6C1 /* Products */,
+				84A236561A0059C4001BFD3F /* MortalKombat */,
+				84A236551A0059C4001BFD3F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		840C336119F30B650062A6C1 /* Products */ = {
+		84A236551A0059C4001BFD3F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				840C336019F30B650062A6C1 /* BMITime */,
+				84A236541A0059C4001BFD3F /* MortalKombat */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		840C336219F30B650062A6C1 /* BMITime */ = {
+		84A236561A0059C4001BFD3F /* MortalKombat */ = {
 			isa = PBXGroup;
 			children = (
-				840C336319F30B650062A6C1 /* main.m */,
+				84A236571A0059C4001BFD3F /* main.m */,
 			);
-			path = BMITime;
+			path = MortalKombat;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		840C335F19F30B650062A6C1 /* BMITime */ = {
+		84A236531A0059C3001BFD3F /* MortalKombat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 840C336719F30B650062A6C1 /* Build configuration list for PBXNativeTarget "BMITime" */;
+			buildConfigurationList = 84A2365B1A0059C4001BFD3F /* Build configuration list for PBXNativeTarget "MortalKombat" */;
 			buildPhases = (
-				840C335C19F30B650062A6C1 /* Sources */,
-				840C335D19F30B650062A6C1 /* Frameworks */,
-				840C335E19F30B650062A6C1 /* CopyFiles */,
+				84A236501A0059C3001BFD3F /* Sources */,
+				84A236511A0059C3001BFD3F /* Frameworks */,
+				84A236521A0059C3001BFD3F /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = BMITime;
-			productName = BMITime;
-			productReference = 840C336019F30B650062A6C1 /* BMITime */;
+			name = MortalKombat;
+			productName = MortalKombat;
+			productReference = 84A236541A0059C4001BFD3F /* MortalKombat */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		840C335819F30B640062A6C1 /* Project object */ = {
+		84A2364C1A0059C3001BFD3F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = JR;
 				TargetAttributes = {
-					840C335F19F30B650062A6C1 = {
-						CreatedOnToolsVersion = 6.0.1;
+					84A236531A0059C3001BFD3F = {
+						CreatedOnToolsVersion = 6.1;
 					};
 				};
 			};
-			buildConfigurationList = 840C335B19F30B640062A6C1 /* Build configuration list for PBXProject "BMITime" */;
+			buildConfigurationList = 84A2364F1A0059C3001BFD3F /* Build configuration list for PBXProject "MortalKombat" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 840C335719F30B640062A6C1;
-			productRefGroup = 840C336119F30B650062A6C1 /* Products */;
+			mainGroup = 84A2364B1A0059C3001BFD3F;
+			productRefGroup = 84A236551A0059C4001BFD3F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				840C335F19F30B650062A6C1 /* BMITime */,
+				84A236531A0059C3001BFD3F /* MortalKombat */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		840C335C19F30B650062A6C1 /* Sources */ = {
+		84A236501A0059C3001BFD3F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				845AD8F519F3F17C00A1F590 /* Employee.m in Sources */,
-				840C336C19F30C0B0062A6C1 /* Person.m in Sources */,
-				840C336419F30B650062A6C1 /* main.m in Sources */,
+				84A236581A0059C4001BFD3F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		840C336519F30B650062A6C1 /* Debug */ = {
+		84A236591A0059C4001BFD3F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -177,7 +165,7 @@
 			};
 			name = Debug;
 		};
-		840C336619F30B650062A6C1 /* Release */ = {
+		84A2365A1A0059C4001BFD3F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -211,14 +199,14 @@
 			};
 			name = Release;
 		};
-		840C336819F30B650062A6C1 /* Debug */ = {
+		84A2365C1A0059C4001BFD3F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		840C336919F30B650062A6C1 /* Release */ = {
+		84A2365D1A0059C4001BFD3F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -228,25 +216,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		840C335B19F30B640062A6C1 /* Build configuration list for PBXProject "BMITime" */ = {
+		84A2364F1A0059C3001BFD3F /* Build configuration list for PBXProject "MortalKombat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				840C336519F30B650062A6C1 /* Debug */,
-				840C336619F30B650062A6C1 /* Release */,
+				84A236591A0059C4001BFD3F /* Debug */,
+				84A2365A1A0059C4001BFD3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		840C336719F30B650062A6C1 /* Build configuration list for PBXNativeTarget "BMITime" */ = {
+		84A2365B1A0059C4001BFD3F /* Build configuration list for PBXNativeTarget "MortalKombat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				840C336819F30B650062A6C1 /* Debug */,
-				840C336919F30B650062A6C1 /* Release */,
+				84A2365C1A0059C4001BFD3F /* Debug */,
+				84A2365D1A0059C4001BFD3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 840C335819F30B640062A6C1 /* Project object */;
+	rootObject = 84A2364C1A0059C3001BFD3F /* Project object */;
 }
