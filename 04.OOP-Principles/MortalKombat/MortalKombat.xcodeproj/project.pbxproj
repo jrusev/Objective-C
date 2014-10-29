@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		84A236581A0059C4001BFD3F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A236571A0059C4001BFD3F /* main.m */; };
-		84C9940B1A005F9500297CA9 /* MKCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C9940A1A005F9500297CA9 /* MKCharacter.m */; };
-		84C9940E1A00633C00297CA9 /* MKNinja.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C9940D1A00633C00297CA9 /* MKNinja.m */; };
-		84C994111A0063E500297CA9 /* MKSorcerer.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C994101A0063E500297CA9 /* MKSorcerer.m */; };
-		84C994141A0064AB00297CA9 /* MKCryomancer.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C994131A0064AB00297CA9 /* MKCryomancer.m */; };
-		84C994171A00651700297CA9 /* MKCyborg.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C994161A00651700297CA9 /* MKCyborg.m */; };
-		84C9941A1A00656B00297CA9 /* MKEnforcer.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C994191A00656B00297CA9 /* MKEnforcer.m */; };
+		84C9942B1A006A8A00297CA9 /* MKCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C994201A006A8A00297CA9 /* MKCharacter.m */; };
+		84C9942C1A006A8A00297CA9 /* MKCryomancer.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C994221A006A8A00297CA9 /* MKCryomancer.m */; };
+		84C9942D1A006A8A00297CA9 /* MKCyborg.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C994241A006A8A00297CA9 /* MKCyborg.m */; };
+		84C9942E1A006A8A00297CA9 /* MKEnforcer.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C994261A006A8A00297CA9 /* MKEnforcer.m */; };
+		84C9942F1A006A8A00297CA9 /* MKNinja.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C994281A006A8A00297CA9 /* MKNinja.m */; };
+		84C994301A006A8A00297CA9 /* MKSorcerer.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C9942A1A006A8A00297CA9 /* MKSorcerer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,20 +31,20 @@
 /* Begin PBXFileReference section */
 		84A236541A0059C4001BFD3F /* MortalKombat */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MortalKombat; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A236571A0059C4001BFD3F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		84C994061A005E7500297CA9 /* MKFighter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKFighter.h; sourceTree = "<group>"; };
-		84C994071A005F0F00297CA9 /* MKLiving.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKLiving.h; sourceTree = "<group>"; };
-		84C994091A005F9500297CA9 /* MKCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKCharacter.h; sourceTree = "<group>"; };
-		84C9940A1A005F9500297CA9 /* MKCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKCharacter.m; sourceTree = "<group>"; };
-		84C9940C1A00633C00297CA9 /* MKNinja.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNinja.h; sourceTree = "<group>"; };
-		84C9940D1A00633C00297CA9 /* MKNinja.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNinja.m; sourceTree = "<group>"; };
-		84C9940F1A0063E500297CA9 /* MKSorcerer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKSorcerer.h; sourceTree = "<group>"; };
-		84C994101A0063E500297CA9 /* MKSorcerer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKSorcerer.m; sourceTree = "<group>"; };
-		84C994121A0064AB00297CA9 /* MKCryomancer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKCryomancer.h; sourceTree = "<group>"; };
-		84C994131A0064AB00297CA9 /* MKCryomancer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKCryomancer.m; sourceTree = "<group>"; };
-		84C994151A00651700297CA9 /* MKCyborg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKCyborg.h; sourceTree = "<group>"; };
-		84C994161A00651700297CA9 /* MKCyborg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKCyborg.m; sourceTree = "<group>"; };
-		84C994181A00656B00297CA9 /* MKEnforcer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKEnforcer.h; sourceTree = "<group>"; };
-		84C994191A00656B00297CA9 /* MKEnforcer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKEnforcer.m; sourceTree = "<group>"; };
+		84C9941C1A006A4000297CA9 /* MKFighter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKFighter.h; sourceTree = "<group>"; };
+		84C9941D1A006A4000297CA9 /* MKLiving.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKLiving.h; sourceTree = "<group>"; };
+		84C9941F1A006A8A00297CA9 /* MKCharacter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKCharacter.h; sourceTree = "<group>"; };
+		84C994201A006A8A00297CA9 /* MKCharacter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKCharacter.m; sourceTree = "<group>"; };
+		84C994211A006A8A00297CA9 /* MKCryomancer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKCryomancer.h; sourceTree = "<group>"; };
+		84C994221A006A8A00297CA9 /* MKCryomancer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKCryomancer.m; sourceTree = "<group>"; };
+		84C994231A006A8A00297CA9 /* MKCyborg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKCyborg.h; sourceTree = "<group>"; };
+		84C994241A006A8A00297CA9 /* MKCyborg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKCyborg.m; sourceTree = "<group>"; };
+		84C994251A006A8A00297CA9 /* MKEnforcer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKEnforcer.h; sourceTree = "<group>"; };
+		84C994261A006A8A00297CA9 /* MKEnforcer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKEnforcer.m; sourceTree = "<group>"; };
+		84C994271A006A8A00297CA9 /* MKNinja.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNinja.h; sourceTree = "<group>"; };
+		84C994281A006A8A00297CA9 /* MKNinja.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNinja.m; sourceTree = "<group>"; };
+		84C994291A006A8A00297CA9 /* MKSorcerer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKSorcerer.h; sourceTree = "<group>"; };
+		84C9942A1A006A8A00297CA9 /* MKSorcerer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKSorcerer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,39 +77,39 @@
 		84A236561A0059C4001BFD3F /* MortalKombat */ = {
 			isa = PBXGroup;
 			children = (
-				84C994051A005E4D00297CA9 /* Protocols */,
-				84C994081A005F7800297CA9 /* Models */,
+				84C9941E1A006A8A00297CA9 /* Models */,
+				84C9941B1A006A4000297CA9 /* Protocols */,
 				84A236571A0059C4001BFD3F /* main.m */,
 			);
 			path = MortalKombat;
 			sourceTree = "<group>";
 		};
-		84C994051A005E4D00297CA9 /* Protocols */ = {
+		84C9941B1A006A4000297CA9 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				84C994061A005E7500297CA9 /* MKFighter.h */,
-				84C994071A005F0F00297CA9 /* MKLiving.h */,
+				84C9941C1A006A4000297CA9 /* MKFighter.h */,
+				84C9941D1A006A4000297CA9 /* MKLiving.h */,
 			);
-			name = Protocols;
+			path = Protocols;
 			sourceTree = "<group>";
 		};
-		84C994081A005F7800297CA9 /* Models */ = {
+		84C9941E1A006A8A00297CA9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				84C994091A005F9500297CA9 /* MKCharacter.h */,
-				84C9940A1A005F9500297CA9 /* MKCharacter.m */,
-				84C9940C1A00633C00297CA9 /* MKNinja.h */,
-				84C9940D1A00633C00297CA9 /* MKNinja.m */,
-				84C9940F1A0063E500297CA9 /* MKSorcerer.h */,
-				84C994101A0063E500297CA9 /* MKSorcerer.m */,
-				84C994121A0064AB00297CA9 /* MKCryomancer.h */,
-				84C994131A0064AB00297CA9 /* MKCryomancer.m */,
-				84C994151A00651700297CA9 /* MKCyborg.h */,
-				84C994161A00651700297CA9 /* MKCyborg.m */,
-				84C994181A00656B00297CA9 /* MKEnforcer.h */,
-				84C994191A00656B00297CA9 /* MKEnforcer.m */,
+				84C9941F1A006A8A00297CA9 /* MKCharacter.h */,
+				84C994201A006A8A00297CA9 /* MKCharacter.m */,
+				84C994211A006A8A00297CA9 /* MKCryomancer.h */,
+				84C994221A006A8A00297CA9 /* MKCryomancer.m */,
+				84C994231A006A8A00297CA9 /* MKCyborg.h */,
+				84C994241A006A8A00297CA9 /* MKCyborg.m */,
+				84C994251A006A8A00297CA9 /* MKEnforcer.h */,
+				84C994261A006A8A00297CA9 /* MKEnforcer.m */,
+				84C994271A006A8A00297CA9 /* MKNinja.h */,
+				84C994281A006A8A00297CA9 /* MKNinja.m */,
+				84C994291A006A8A00297CA9 /* MKSorcerer.h */,
+				84C9942A1A006A8A00297CA9 /* MKSorcerer.m */,
 			);
-			name = Models;
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,13 +168,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84C994111A0063E500297CA9 /* MKSorcerer.m in Sources */,
+				84C994301A006A8A00297CA9 /* MKSorcerer.m in Sources */,
 				84A236581A0059C4001BFD3F /* main.m in Sources */,
-				84C9940E1A00633C00297CA9 /* MKNinja.m in Sources */,
-				84C9941A1A00656B00297CA9 /* MKEnforcer.m in Sources */,
-				84C994171A00651700297CA9 /* MKCyborg.m in Sources */,
-				84C994141A0064AB00297CA9 /* MKCryomancer.m in Sources */,
-				84C9940B1A005F9500297CA9 /* MKCharacter.m in Sources */,
+				84C9942E1A006A8A00297CA9 /* MKEnforcer.m in Sources */,
+				84C9942B1A006A8A00297CA9 /* MKCharacter.m in Sources */,
+				84C9942C1A006A8A00297CA9 /* MKCryomancer.m in Sources */,
+				84C9942F1A006A8A00297CA9 /* MKNinja.m in Sources */,
+				84C9942D1A006A8A00297CA9 /* MKCyborg.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
