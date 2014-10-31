@@ -3,7 +3,6 @@
 1. Create an abstraction for performing HTTP requests with Objective-C
     * It should support HTTP GET, POST, PUT and DELETE
     * Example:
-
         ```objective-c
         [httpRequester get: @"http://url.com" 
                   headers: headersDictionary
