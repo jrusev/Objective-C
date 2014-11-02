@@ -79,13 +79,13 @@
                                     <action selector="canelButtonPressed:" destination="tP8-oR-RZZ" eventType="touchUpInside" id="NqR-Px-8JK"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cHI-tr-TBn">
-                                <rect key="frame" x="16" y="221" width="343" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Account" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z3A-J0-PS9">
+                                <rect key="frame" x="16" y="158" width="343" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Account" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z3A-J0-PS9">
-                                <rect key="frame" x="16" y="158" width="343" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cHI-tr-TBn">
+                                <rect key="frame" x="16" y="221" width="343" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -95,7 +95,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="accountTextField" destination="Z3A-J0-PS9" id="gzj-Ie-kQd"/>
-                        <outlet property="passwordTextField" destination="Z3A-J0-PS9" id="cQt-EX-IAm"/>
+                        <outlet property="passwordTextField" destination="cHI-tr-TBn" id="tDL-eI-KyC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6UT-pi-Qhk" userLabel="First Responder" sceneMemberID="firstResponder"/>
