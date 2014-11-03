@@ -11,13 +11,11 @@
 @interface Password : NSObject
 
 @property (nonatomic, copy) NSString *account;
-@property (nonatomic, copy) NSString *hashedPassword;
-@property (nonatomic, copy) NSString *salt;
+@property (nonatomic, strong) NSData *encodedPassword;
 
 
 // Designated initializer
-- (instancetype)initWithHashedPassword:(NSString *)hashedPassword
-                               andSalt:(NSString *)salt
-                            forAccount:(NSString *)account;
+- (instancetype)initForAccount:(NSString *)account
+           withEncodedPassword:(NSData *)encodedPassoword;
 
 @end

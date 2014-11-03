@@ -11,6 +11,7 @@
 
 @interface ShowPasswordViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UILabel *accountLabel;
 @property (strong, nonatomic) IBOutlet UITextField *encryptionCodeTextField;
 @property (strong, nonatomic) IBOutlet UILabel *passwordLabel;
 @property (weak, nonatomic) Password *password;

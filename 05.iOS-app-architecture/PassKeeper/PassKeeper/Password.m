@@ -11,23 +11,21 @@
 @implementation Password
 
 - (instancetype)init {
-    return [self initWithHashedPassword:nil andSalt:nil forAccount:nil];
+    return [self initForAccount:nil withEncodedPassword:nil];
 }
 
-- (instancetype)initWithHashedPassword:(NSString *)hashedPassword
-                               andSalt:(NSString *)salt
-                            forAccount:(NSString *)account {
+- (instancetype)initForAccount:(NSString *)account
+           withEncodedPassword:(NSData *)encodedPassword {
     self = [super init];
     if (self) {
-        _hashedPassword = hashedPassword;
-        _salt = salt;
         _account = account;
+        _encodedPassword = encodedPassword;
     }
-    return self;
+    return self;    
 }
 
 -(NSString *)description {
-    return [NSString stringWithFormat:@"%@ (password:%@)", self.account, self.hashedPassword];
+    return [NSString stringWithFormat:@"%@ (password:%@)", self.account, self.encodedPassword];
 }
 
 @end

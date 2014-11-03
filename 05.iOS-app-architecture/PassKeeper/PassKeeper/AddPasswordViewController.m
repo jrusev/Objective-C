@@ -7,24 +7,37 @@
 //
 
 #import "AddPasswordViewController.h"
+#import "NSData+AES.h"
 
 @implementation AddPasswordViewController
 
 - (IBAction)addButtonPressed:(id)sender {
-    NSString *realPassword = self.passwordTextField.text;
+    
     NSString *account = self.accountTextField.text;
+    NSString *password = self.passwordTextField.text;
+    NSString *key = self.encryptionKeyTextField.text;
     
     if (account.length == 0) {
         [self showErrorWithMessage:@"Account cannot be empty!"];
         return;
     }
     
-    if (realPassword.length == 0) {
+    if (password.length == 0) {
         [self showErrorWithMessage:@"Password cannot be empty!"];
         return;
     }
     
-    Password *pass = [[Password alloc] initWithHashedPassword:realPassword andSalt:@"salt" forAccount:account];
+    if (key.length == 0) {
+        [self showErrorWithMessage:@"Key cannot be empty!"];
+        return;
+    }
+    
+
+    NSData *data = [password dataUsingEncoding:NSUTF8StringEncoding];
+    NSData *en_data = [data AES128EncryptedDataWithKey:key];
+    
+    Password *pass = [[Password alloc] initForAccount:account withEncodedPassword:en_data];
+    pass.encodedPassword = en_data;
     [self.delegate addPassword:pass];
 }
 

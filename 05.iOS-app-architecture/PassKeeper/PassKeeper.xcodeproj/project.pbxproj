@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		841690781A07C37400C74CFF /* ShowPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841690771A07C37400C74CFF /* ShowPasswordViewController.m */; };
+		8416907B1A07E30A00C74CFF /* NSData+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 8416907A1A07E30A00C74CFF /* NSData+AES.m */; };
 		8445F7861A06D8BD00228397 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8445F7851A06D8BD00228397 /* main.m */; };
 		8445F7891A06D8BD00228397 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8445F7881A06D8BD00228397 /* AppDelegate.m */; };
 		8445F78F1A06D8BD00228397 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8445F78D1A06D8BD00228397 /* Main.storyboard */; };
@@ -32,6 +33,8 @@
 /* Begin PBXFileReference section */
 		841690761A07C37400C74CFF /* ShowPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowPasswordViewController.h; sourceTree = "<group>"; };
 		841690771A07C37400C74CFF /* ShowPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowPasswordViewController.m; sourceTree = "<group>"; };
+		841690791A07E30A00C74CFF /* NSData+AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AES.h"; sourceTree = "<group>"; };
+		8416907A1A07E30A00C74CFF /* NSData+AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AES.m"; sourceTree = "<group>"; };
 		8445F7801A06D8BD00228397 /* PassKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PassKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8445F7841A06D8BD00228397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8445F7851A06D8BD00228397 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -69,6 +72,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8416907C1A07E32700C74CFF /* Encryption */ = {
+			isa = PBXGroup;
+			children = (
+				841690791A07E30A00C74CFF /* NSData+AES.h */,
+				8416907A1A07E30A00C74CFF /* NSData+AES.m */,
+			);
+			name = Encryption;
+			sourceTree = "<group>";
+		};
 		8445F7771A06D8BD00228397 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +108,7 @@
 				8445F7AA1A06D98D00228397 /* AddPasswordViewController.m */,
 				841690761A07C37400C74CFF /* ShowPasswordViewController.h */,
 				841690771A07C37400C74CFF /* ShowPasswordViewController.m */,
+				8416907C1A07E32700C74CFF /* Encryption */,
 				8445F7B21A06E2CA00228397 /* Model */,
 				8445F78D1A06D8BD00228397 /* Main.storyboard */,
 				8445F7901A06D8BD00228397 /* Images.xcassets */,
@@ -242,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8416907B1A07E30A00C74CFF /* NSData+AES.m in Sources */,
 				8445F7AB1A06D98D00228397 /* AddPasswordViewController.m in Sources */,
 				8445F7891A06D8BD00228397 /* AppDelegate.m in Sources */,
 				841690781A07C37400C74CFF /* ShowPasswordViewController.m in Sources */,

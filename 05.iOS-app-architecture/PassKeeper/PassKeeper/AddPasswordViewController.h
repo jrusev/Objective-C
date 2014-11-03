@@ -21,6 +21,7 @@
 @property (weak, nonatomic) id<AddPasswordViewControllerDelegate> delegate;
 @property (strong, nonatomic) IBOutlet UITextField *accountTextField;
 @property (strong, nonatomic) IBOutlet UITextField *passwordTextField;
+@property (strong, nonatomic) IBOutlet UITextField *encryptionKeyTextField;
 
 
 - (IBAction)addButtonPressed:(id)sender;

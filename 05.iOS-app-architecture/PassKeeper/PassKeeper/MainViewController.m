@@ -9,6 +9,7 @@
 #import "MainViewController.h"
 #import "AddPasswordViewController.h"
 #import "ShowPasswordViewController.h"
+#import "NSData+AES.h"
 
 @interface MainViewController()
 
@@ -20,10 +21,23 @@
 
 -(void)viewDidLoad {
     self.passwords = [NSMutableArray array];
-    [self.passwords addObject:[[Password alloc] initWithHashedPassword:@"pass1" andSalt:@"salt" forAccount:@"Google"]];
-    [self.passwords addObject:[[Password alloc] initWithHashedPassword:@"pass2" andSalt:@"salt" forAccount:@"Facebook"]];
+    
+    NSData *en_data1 = [self encryptString:@"pass1" withKey:@"Google"];
+    NSData *en_data2 = [self encryptString:@"pass2" withKey:@"Facebook"];
+    
+    Password *pass1 = [[Password alloc] initForAccount:@"Google" withEncodedPassword:en_data1];
+    Password *pass2 = [[Password alloc] initForAccount:@"Facebook" withEncodedPassword:en_data2];
+    
+    [self.passwords addObject:pass1];
+    [self.passwords addObject:pass2];
+    
     self.tableView.dataSource = self;
-    //self.automaticallyAdjustsScrollViewInsets = NO;
+}
+
+- (NSData *)encryptString:(NSString *)str withKey:(NSString *)key {
+    NSData *data = [str dataUsingEncoding:NSUTF8StringEncoding];
+    NSData *encoded = [data AES128EncryptedDataWithKey:key];
+    return encoded;
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -39,7 +53,6 @@
             
             ShowPasswordViewController *nextController = segue.destinationViewController;
             nextController.password = password;
-            NSLog(@"%@", password);
         }
     }
     
@@ -66,7 +79,6 @@
     [self.tableView reloadData];
     [self dismissViewControllerAnimated:YES completion:nil];
     //[self.navigationController popViewControllerAnimated:YES];
-    NSLog(@"%@", self.passwords);
 }
 
 - (void)didCancel {
