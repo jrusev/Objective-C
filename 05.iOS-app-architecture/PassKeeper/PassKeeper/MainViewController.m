@@ -8,6 +8,7 @@
 
 #import "MainViewController.h"
 #import "AddPasswordViewController.h"
+#import "ShowPasswordViewController.h"
 
 @interface MainViewController()
 
@@ -22,6 +23,7 @@
     [self.passwords addObject:[[Password alloc] initWithHashedPassword:@"pass1" andSalt:@"salt" forAccount:@"Google"]];
     [self.passwords addObject:[[Password alloc] initWithHashedPassword:@"pass2" andSalt:@"salt" forAccount:@"Facebook"]];
     self.tableView.dataSource = self;
+    //self.automaticallyAdjustsScrollViewInsets = NO;
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -29,6 +31,18 @@
         AddPasswordViewController *nextController = segue.destinationViewController;
         nextController.delegate = self;
     }
+    
+    if ([sender isKindOfClass:[UITableViewCell class]]) {
+        if ([segue.destinationViewController isKindOfClass:[ShowPasswordViewController class]]) {
+            NSIndexPath *path = [self.tableView indexPathForCell:sender];
+            Password *password = self.passwords[path.row];
+            
+            ShowPasswordViewController *nextController = segue.destinationViewController;
+            nextController.password = password;
+            NSLog(@"%@", password);
+        }
+    }
+    
 }
 
 #pragma mark - UITableView DataSource

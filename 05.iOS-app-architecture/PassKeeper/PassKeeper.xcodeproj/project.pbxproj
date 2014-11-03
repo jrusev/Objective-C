@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		841690781A07C37400C74CFF /* ShowPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841690771A07C37400C74CFF /* ShowPasswordViewController.m */; };
 		8445F7861A06D8BD00228397 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8445F7851A06D8BD00228397 /* main.m */; };
 		8445F7891A06D8BD00228397 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8445F7881A06D8BD00228397 /* AppDelegate.m */; };
 		8445F78F1A06D8BD00228397 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8445F78D1A06D8BD00228397 /* Main.storyboard */; };
@@ -29,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		841690761A07C37400C74CFF /* ShowPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowPasswordViewController.h; sourceTree = "<group>"; };
+		841690771A07C37400C74CFF /* ShowPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowPasswordViewController.m; sourceTree = "<group>"; };
 		8445F7801A06D8BD00228397 /* PassKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PassKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8445F7841A06D8BD00228397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8445F7851A06D8BD00228397 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -91,6 +94,8 @@
 				8445F7AD1A06D9C800228397 /* MainViewController.m */,
 				8445F7A91A06D98D00228397 /* AddPasswordViewController.h */,
 				8445F7AA1A06D98D00228397 /* AddPasswordViewController.m */,
+				841690761A07C37400C74CFF /* ShowPasswordViewController.h */,
+				841690771A07C37400C74CFF /* ShowPasswordViewController.m */,
 				8445F7B21A06E2CA00228397 /* Model */,
 				8445F78D1A06D8BD00228397 /* Main.storyboard */,
 				8445F7901A06D8BD00228397 /* Images.xcassets */,
@@ -239,6 +244,7 @@
 			files = (
 				8445F7AB1A06D98D00228397 /* AddPasswordViewController.m in Sources */,
 				8445F7891A06D8BD00228397 /* AppDelegate.m in Sources */,
+				841690781A07C37400C74CFF /* ShowPasswordViewController.m in Sources */,
 				8445F7861A06D8BD00228397 /* main.m in Sources */,
 				8445F7B11A06E21900228397 /* Password.m in Sources */,
 				8445F7AE1A06D9C800228397 /* MainViewController.m in Sources */,
@@ -432,6 +438,7 @@
 				8445F7A51A06D8BE00228397 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8445F7A61A06D8BE00228397 /* Build configuration list for PBXNativeTarget "PassKeeperTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +447,7 @@
 				8445F7A81A06D8BE00228397 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
