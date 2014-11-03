@@ -6,6 +6,9 @@
 //  Copyright (c) 2014 JR. All rights reserved.
 //
 
+#define LETTERS @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+#define PASSWORD_LENGTH 12
+
 #import "AddPasswordViewController.h"
 #import "NSData+AES.h"
 
@@ -43,6 +46,21 @@
 
 - (IBAction)canelButtonPressed:(id)sender {
     [self.delegate didCancel];
+}
+
+- (IBAction)generatePasswordButtonPressed:(id)sender {
+    self.passwordTextField.text = [self randomStringWithLength:PASSWORD_LENGTH];
+}
+
+-(NSString *)randomStringWithLength:(int)len {
+    
+    NSMutableString *randomString = [NSMutableString stringWithCapacity: len];
+    
+    for (int i=0; i<len; i++) {
+        [randomString appendFormat:@"%C", [LETTERS characterAtIndex:arc4random_uniform(LETTERS.length)]];
+    }
+    
+    return randomString;
 }
 
 - (void)showErrorWithMessage:(NSString *)message {

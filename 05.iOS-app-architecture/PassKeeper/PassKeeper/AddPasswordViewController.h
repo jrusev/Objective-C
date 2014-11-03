@@ -26,5 +26,6 @@
 
 - (IBAction)addButtonPressed:(id)sender;
 - (IBAction)canelButtonPressed:(id)sender;
+- (IBAction)generatePasswordButtonPressed:(id)sender;
 
 @end
