@@ -1,6 +1,6 @@
 //
-//  HttpRequster.m
-//  HttpRequster
+//  HttpRequester.m
+//  HttpRequester
 //
 //  Created by JR on 11/4/14.
 //

@@ -1,6 +1,6 @@
 //
-//  HttpRequster.h
-//  HttpRequster
+//  HttpRequester.h
+//  HttpRequester
 //
 //  Created by JR on 11/4/14.
 //
