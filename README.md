@@ -2,8 +2,8 @@
 
 Telerik Software Academy, mobile track
 
-1. [iOS-Apps-Telerik-Academy Fundamentals](https://github.com/jrusev/iOS-Apps-Telerik-Academy/tree/master/01.iOS-Apps-Telerik-Academy-Fundamentals)
-* [Methods in iOS-Apps-Telerik-Academy](https://github.com/jrusev/iOS-Apps-Telerik-Academy/tree/master/02.Methods-in-iOS-Apps-Telerik-Academy)
+1. [Objective-C Fundamentals](https://github.com/jrusev/iOS-Apps-Telerik-Academy/tree/master/01.Objective-C-Fundamentals)
+* [Methods-in-Objective-C](https://github.com/jrusev/iOS-Apps-Telerik-Academy/tree/master/02.Methods-in-Objective-C)
 * [Objects and Classes](https://github.com/jrusev/iOS-Apps-Telerik-Academy/tree/master/03.Objects-and-Classes)
 * [OOP Principles](https://github.com/jrusev/iOS-Apps-Telerik-Academy/tree/master/04.OOP-Principles)
 * [iOS app Architecture](https://github.com/jrusev/iOS-Apps-Telerik-Academy/tree/master/05.iOS-app-architecture)
