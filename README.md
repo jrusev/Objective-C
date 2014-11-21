@@ -3,7 +3,7 @@
 Telerik Software Academy, mobile track
 
 1. Objective-C Fundamentals
-* Methods-in-Objective-C
+* Methods in Objective-C
 * Objects and Classes
 * OOP Principles
 * iOS app Architecture
