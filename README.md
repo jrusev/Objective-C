@@ -10,3 +10,13 @@ Telerik Software Academy, mobile track
 * [Storyboards](https://github.com/jrusev/iOS-Apps-Telerik-Academy/tree/master/06.Storyboards)
 * [Views and Controls in iOS](https://github.com/jrusev/iOS-Apps-Telerik-Academy/tree/master/07.Views-and-Controls)
 * [HTTP Requests in iOS](https://github.com/jrusev/iOS-Apps-Telerik-Academy/tree/master/08.HTTP-Requests-in-iOS)
+* Memory Management
+* Custom Views
+* Animations
+* Notifications
+* Core Data
+* Address book API
+* Geolocation API
+* Camera API
+* Async execution in iOS apps
+* Gestures
